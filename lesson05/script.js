@@ -10,13 +10,13 @@ let isNumber = function(n) {
      money;
 
     
-    let showTypeOf = function(data){
+    let showTypeOf = function(data) {
         return typeof(data);
     };
 
     let start = function() {
         
-        do {
+        do{
             money = prompt('Ваш месячный доход?');
         }
         while (!isNumber(money));
@@ -34,7 +34,6 @@ let isNumber = function(n) {
         let sum = 0;
         let cost;
         for (let i = 0; i < 2;i++){
-         
             expenses = prompt('Введите обязательную статью расходов?');
             cost = prompt('Во сколько это обойдется?');
             
@@ -70,10 +69,10 @@ let isNumber = function(n) {
     if (budgetDay >= 1200) {
         return ('У вас высокий уровень дохода');
     } 
-    if ( (budgetDay < 1200) && (budgetDay >= 600) ) {
+    if (budgetDay < 1200 && budgetDay >= 600 ) {
         return ('У вас средний уровень дохода');
     } 
-    if ( (budgetDay < 600) && (budgetDay >= 0) ) {
+    if (budgetDay < 600 && budgetDay >= 0 ) {
         return ('К сожалению у вас уровень дохода ниже среднего');
     }
     if (budgetDay < 0) {
@@ -93,6 +92,6 @@ let isNumber = function(n) {
     } else {
         console.log('Цель не будет достигнута');
     }
-    
+
     console.log('Бюджет на день: ' + Math.floor(budgetDay));
     console.log(getStatusIncome(budgetDay));
