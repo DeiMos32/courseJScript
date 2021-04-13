@@ -2,7 +2,7 @@
 
 function randomNumber() {
     let random = Math.floor(Math.random() * (100 - 0) + 0);
-    let begin = confirm('"Угадай число от 1 до 100');
+    let begin = confirm('Угадай число от 1 до 100');
 
     if (begin === false) {
         return alert('Игра окончена');
